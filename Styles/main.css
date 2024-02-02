@@ -1,0 +1,383 @@
+body {
+    background-color: #f2f2f2;
+  }
+  section{
+    padding-bottom: 25px;
+  }
+
+  /*Header css Starts */
+  #header {
+    margin: 0;
+    background-image: linear-gradient(to right, #051322, #15457c);
+    height: 600px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navContainer {
+    position: absolute;
+    top: 0;
+  }
+  .ticket {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 1200px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .ticket-type {
+    margin-top: 50px;
+  }
+
+  .selected-type {
+    background-color: #cde5f9;
+    border-radius: 30px;
+  }
+
+  .flight-search {
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .flight {
+    padding: 15px;
+    color: black;
+    border-right: 1px solid #d8d8d8;
+  }
+
+  .fare-search {
+    margin-top: 30px;
+    display: flex;
+    padding: 25px;
+  }
+
+  .trending {
+    margin-right: 5px;
+    background-color: #f1ebeb;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  .ticketFare {
+    display: flex;
+    justify-content: flex-start;
+    background-color:#f1ebeb;
+    border-radius: 5px;
+  }
+  .form-check-input{
+    background-color:#f1ebeb;
+    border: 1px solid grey;
+    
+  }
+
+  .search-button {
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    width: 216px;
+    height: 44px;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    left: 42%;
+  }
+
+  .data {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .categories {
+    position: absolute;
+    padding: 10px;
+    margin-top: 15px;
+    z-index: 2;
+    top: -15px;
+  }
+
+  .categories span {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  a span {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  a i {
+    font-size: 30px;
+  }
+
+  .exploreCard {
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .landingCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 12%;
+    z-index: 3;
+  }
+
+  .wheretogo {
+    padding-right:10px;
+    border-right: 1px solid #d8d8d8;
+  }
+
+
+
+  .stickyNav {
+    display: none;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .stickyNav.scrolled {
+    display: block;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .offerCardContent {
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .DownloadContainer {
+    max-width: 1200px;
+  }
+  /*Header css ends*/
+
+/*HighLights Css*/
+.cards-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+ 
+}
+
+.Highlightcard {
+  flex: 0 0 390px;
+  justify-content:center;
+  height: 100px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.carousel-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 26px;
+  text-align: center;
+  z-index: 1;
+  width: 45px;
+    height: 45px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-color: transparent !important;
+}
+
+.prev {
+  left: 0;
+  padding-top: 5px;
+}
+
+.next {
+  right: 0;
+  padding-top: 5px;
+}
+
+
+
+  /*Ads Css*/
+  .ad-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-size: cover;
+  }
+  #ad {
+    position: relative;
+  }
+
+  .ad-image {
+    z-index: 1;
+  }
+
+  .ad-sponsor {
+    height: 16px;
+    width: 70px;
+    position: absolute;
+    right: 150px;
+    top: 5px;
+    z-index: 2;
+  }
+/*Slider Card Css*/
+  .container {
+   
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .wrapper .row {
+    cursor: pointer;
+  }
+
+  .wrapper {
+    max-width: 1200px !important;
+    overflow: hidden;
+  }
+
+  .cardstyle {
+    position: relative;
+    width: 200px;
+    height: 231px;
+    margin-left: 15px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px !important;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .h2 {
+    margin: 0;
+  }
+
+  .pagination {
+    margin: 0;
+  }
+
+  /*TripMoney Css*/
+  #cardBorder {
+    border-left: 30px solid rgb(255, 203, 202)!important;
+    position: relative;
+    height: 80px;
+  }
+  #imgPostion{
+    position: absolute;
+    left: -19px;
+    bottom: 10px;
+
+  }
+  .trip{
+    margin-left: 30px;
+    width: 91px;
+    height: 44px;
+  }
+
+
+
+  /*Footer Css*/
+  footer {
+    background-color: #e7e7e7;
+  }
+
+  .footNav {
+    background-color: #f2f2f2;
+  }
+  i {
+    font-size: 30px;
+  }
+  
+  .small {
+    font-size: 12px;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    font-size: small;
+  }
+
+  .para {
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: medium;
+  }
+
+  @media screen and (max-width: 900px) {
+    .cardstyle {
+      width: calc(100% / 3.25);
+      margin-right: 15px;
+      margin-left: 0px;
+    }
+
+    .h2 {
+      padding-right: 15px;
+    }
+  }
+
+  /*Responsive Small Card Slider*/
+
+  @media screen and (max-width: 768px) {
+    .cardstyle {
+      width: calc(100% / 1.25);
+      margin-right: 15px;
+      margin-left: 0px;
+    }
+
+    .h2 {
+      padding-right: 15px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    .h2 {
+      font-size: 18px;
+    }
+  }
+
+  /*Responsive Offer Card Slider */
+ 

@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday
+    </title>
+    <link rel="icon" type="image/x-icon" href="Assets/MMYT.png" />
+    <!--Bootstrap Css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!--Google Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="Styles/main.css" />
+  </head>
+  <style>
+    .form-container {
+      padding: 20px;
+      width: 510px;
+      height: 565px;
+      box-sizing: border-box;
+    }
+
+    .switch-btn {
+      cursor: pointer;
+      padding: 10px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      padding: 10px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .list {
+      cursor: pointer;
+    }
+
+    .list.active {
+      color: #2196f3;
+      border-bottom: 2px solid #2196f3;
+    }
+
+    .iconText.active {
+      color: #2196f3;
+      border-bottom: 2px solid #2196f3;
+    }
+  </style>
+
+  <body>
+    <!--Header Section starts-->
+    <section id="header">
+      <div class="navContainer mx-auto" style="width: 1200px; height: 97px">
+        <!--HeaderNav-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+              <img src="Assets/logo.png" alt="" width="113" height="36" />
+            </a>
+            <div class="navbar-nav text-dark">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#"
+              >
+                <img
+                  class="float-start"
+                  src="Assets/discount.png"
+                  alt="#"
+                  width="25"
+                  height="25"
+                />
+                <p
+                  class="h6 px-3 float-start"
+                  style="font-size: 12px; font-weight: bolder"
+                >
+                  Special offers <br />
+                  <sub style="font-size: 10px; font-weight: normal"
+                    >Explore great deals & offers</sub
+                  >
+                </p>
+              </a>
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#"
+              >
+                <img
+                  class="float-start"
+                  src="Assets/bizz.avif"
+                  alt="#"
+                  width="44px"
+                />
+                <p
+                  class="h6 px-3 float-start"
+                  style="font-size: 12px; font-weight: bolder"
+                >
+                  Introducing myBiz <br />
+                  <sub style="font-size: 10px; font-weight: normal"
+                    >Business Travel Solution</sub
+                  >
+                </p>
+              </a>
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#"
+              >
+                <img
+                  class="float-start"
+                  src="Assets/MMYT.png"
+                  alt="#"
+                  width="16px"
+                  height="25px"
+                />
+                <p
+                  class="h6 px-3 float-start"
+                  style="font-size: 12px; font-weight: bolder"
+                >
+                  My Trips <br />
+                  <sub style="font-size: 10px; font-weight: normal"
+                    >Manage your bookings</sub
+                  >
+                </p>
+              </a>
+              <a
+                class="nav-link btn active text-white bg-primary rounded d-flex justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="width: 200px; height: 42px"
+                href="#"
+              >
+                <img
+                  class="rounded-5"
+                  src="Assets/MMYT.png"
+                  alt="#"
+                  width="23px"
+                  height="22px"
+                />
+                <p
+                  class="h6 px-3 d-flex justify-centent-center"
+                  style="font-size: 12px; font-weight: bolder"
+                >
+                  Login or Create Account
+                  <i class="bi bi-chevron-down small"></i>
+                </p>
+              </a>
+              <a
+                class="nav-link active text-white rounded d-flex justify-content-center"
+                style="width: 152px; height: 42px"
+                href="#"
+              >
+                <img
+                  src="Assets/india.png"
+                  alt="#"
+                  width="15px"
+                  height="12px"
+                />
+                <p
+                  class="h6 px-3 d-flex justify-centent-center"
+                  style="font-size: 10px; font-weight: bolder"
+                >
+                  IN | ENG | INR
+
+                  <i class="bi bi-chevron-down small"></i>
+                </p>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--Modal Login starts-->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- <img src="Assets/loginPersuassionValley.avif" alt="Background Image" /> -->
+            <div class="form-container">
+              <button class="switch-btn" onclick="toggleForm()">
+                Switch to Register
+              </button>
+              <div id="loginForm">
+                <h2>Login</h2>
+                <div class="form-group">
+                  <label for="loginUsername">Username:</label>
+                  <input
+                    type="text"
+                    id="loginUsername"
+                    placeholder="Enter your username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="loginPassword">Password:</label>
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                  />
+                </div>
+                <div class="form-group">
+                  <button onclick="validateLogin()">Login</button>
+                </div>
+              </div>
+              <div id="registerForm" style="display: none">
+                <h2>Register</h2>
+                <div class="form-group">
+                  <label for="registerUsername">Username:</label>
+                  <input
+                    type="text"
+                    id="registerUsername"
+                    placeholder="Choose a username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="registerPassword">Password:</label>
+                  <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Choose a password"
+                  />
+                </div>
+                <div class="form-group">
+                  <button onclick="validateRegister()">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal Login ends-->
+
+      <div class="data">
+        <div class="card categories rounded-2" style="width: 950px">
+          <div class="row justify-content-around">
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  flightsmode
+                </span>
+                Flights</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  house </span
+                >Homestays & Villas</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  train </span
+                >Trains</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  directions_bus </span
+                >Buses</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small text-center"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  directions_car </span
+                >Cabs</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  universal_currency </span
+                >Forex & Currency</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small text-center"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  medical_services </span
+                >Travel Insurance</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  deck </span
+                >Holiday Packages</span
+              >
+            </div>
+            <div class="col-lg-1 col-md-4 col-4 text-center">
+              <span class="iconText small"
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-size: 35px"
+                >
+                  hotel </span
+                >Hotels</span
+              >
+            </div>
+          </div>
+        </div>
+        <!--Sticky nav start-->
+        <nav class="stickyNav navbar navbar-expand-lg bg-white">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/Assets/logo@2x.png"
+                alt="Bootstrap"
+                width="113px"
+                height="36px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav d-flex align-items-start justify-content-around"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText"
+                      ><span class="material-symbols-outlined">
+                        flightsmode
+                      </span>
+                      Flights</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined"> hotel </span
+                      >Hotels</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined"> house </span
+                      >Homestays & Villas</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined"> train </span
+                      >Trains</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined">
+                        directions_bus </span
+                      >Buses</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined">
+                        directions_car </span
+                      >Cabs</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined">
+                        universal_currency </span
+                      >Forex & Currency</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined">
+                        medical_services </span
+                      >Travel Insurance</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><span class="iconText text-center"
+                      ><span class="material-symbols-outlined"> deck </span
+                      >Holiday Packages</span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex justify-content-end">
+                <a
+                  class="nav-link btn active text-white bg-primary rounded d-flex justify-content-center"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  style="width: 200px; height: 42px"
+                  href="#"
+                >
+                  <img
+                    class="rounded-5"
+                    src="Assets/MMYT.png"
+                    alt="#"
+                    width="23px"
+                    height="22px"
+                  />
+                  <p
+                    class="h6 px-3 d-flex justify-centent-center"
+                    style="font-size: 12px; font-weight: bolder"
+                  >
+                    Login or Create Account
+                    <i class="bi bi-chevron-down small"></i>
+                  </p>
+                </a>
+                <a
+                  class="nav-link active rounded d-flex justify-content-center"
+                  style="width: 152px; height: 42px"
+                  href="#"
+                >
+                  <img
+                    src="Assets/india.png"
+                    alt="#"
+                    width="15px"
+                    height="12px"
+                  />
+                  <p
+                    class="h6 px-3 d-flex justify-centent-center"
+                    style="font-size: 10px; font-weight: bolder"
+                  >
+                    IN | ENG | INR
+
+                    <i class="bi bi-chevron-down small"></i>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--Sticky nav end-->
+        <div class="ticket">
+          <div class="ticket-type">
+            <div class="form-check form-check-inline selected-type">
+              <label class="form-check-label small fw-bold" for="inlineRadio1"
+                ><i
+                  class="bi bi-check-circle-fill primary"
+                  style="font-size: 14px"
+                ></i>
+                ONEWAY</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input bg-none"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label small" for="inlineRadio2"
+                >ROUND TRIP</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input bg-none"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio3"
+                value="option3"
+              />
+              <label class="form-check-label small" for="inlineRadio3"
+                >MULTI CITY</label
+              >
+            </div>
+          </div>
+          <div class="flight-search">
+            <div class="flight" style="width: 250px">
+              <span class="small">FROM</span>
+              <h1 class="fw-bold h3 m-0">Delhi</h1>
+              <span class="small">DEL,Delhi Airport India</span>
+            </div>
+            <div class="flight" style="width: 300px">
+              <span class="small">TO</span>
+              <h1 class="fw-bold h3 m-0">Bengaluru</h1>
+              <span class="small"
+                >BRL, Kempogowda International Airport India</span
+              >
+            </div>
+            <div class="flight" style="width: 158px">
+              <span class="small"
+                >Departure<i
+                  class="bi bi-chevron-down"
+                  style="font-size: 14px"
+                ></i
+              ></span>
+              <h1 class="fw-bolder text-black h6 m-0">
+                <span class="h2">25</span> NOV'23
+              </h1>
+              <span class="small">Saturday</span>
+            </div>
+            <div class="flight" style="width: 157px">
+              <span class="small"
+                >Departure<i
+                  class="bi bi-chevron-down"
+                  style="font-size: 14px"
+                ></i
+              ></span>
+              <p class="small">Tap to add a return date for bigger discounts</p>
+            </div>
+            <div class="flight" style="width: 300px">
+              <span class="small"
+                >Travelers and classes
+                <i class="bi bi-chevron-down" style="font-size: 14px"></i
+              ></span>
+              <h1 class="h3 m-0"><span class="h2 fw-bold">1</span>Traveller</h1>
+              <p class="small">Economy/Premium Economy</p>
+            </div>
+          </div>
+          <div class="fare-search d-flex justify-content-around">
+            <div class="ticketFare">
+              <div class="form-check form-check-inline">
+                <label
+                  class="form-check-label small"
+                  for="inlineRadio2"
+                  style="width: 70px; font-size: 12px"
+                  >Select A Fare Type:</label
+                >
+              </div>
+              <div class="form-check form-check-inline selected-type">
+                <label
+                  class="form-check-label small fw-bold"
+                  for="inlineRadio1"
+                  style="width: 80px; font-size: 12px"
+                  ><i
+                    class="bi bi-check-circle-fill primary"
+                    style="font-size: 14px"
+                  ></i>
+                  Regular fares</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label
+                  class="form-check-label small"
+                  for="inlineRadio2"
+                  style="width: 75px; font-size: 12px"
+                  >Armed Forces Fares</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label
+                  class="form-check-label small"
+                  for="inlineRadio3"
+                  style="width: 75px; font-size: 12px"
+                  >Student Fares</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label
+                  class="form-check-label small"
+                  for="inlineRadio3"
+                  style="width: 75px; font-size: 12px"
+                  >Double Seat Fares Fares</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label
+                  class="form-check-label small"
+                  for="inlineRadio3"
+                  style="width: 75px; font-size: 12px"
+                  >Doctors & Nurses Fares</label
+                >
+              </div>
+            </div>
+            <div class="trendingSearch diflex justify-content-around">
+              <div class="d-inline small fw-bold me-2">Trending Searches:</div>
+              <div class="trending d-inline small">
+                Chennai
+                <span
+                  ><i
+                    class="bi bi-arrow-right text-primary"
+                    style="font-size: 14px; text-align: center"
+                  ></i></span
+                >Kuala Lumpur
+              </div>
+              <div class="trending d-inline small">
+                Delhi
+                <span
+                  ><i
+                    class="bi bi-arrow-right text-primary"
+                    style="font-size: 14px; text-align: center"
+                  ></i></span
+                >Kolkata
+              </div>
+            </div>
+          </div>
+          <div class="search-button btn rounded-5">
+            <span class="text-white text-center H3" style="font-size: 24px"
+              >SEARCH</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="landingCard" style="width: 1200px; height: 82.4px">
+        <div class="explore">
+          <img src="Assets/downArrow.png" alt="#" width="12" height="13" />
+          <span class="text-white">Explore Now</span>
+          <img src="Assets/downArrow.png" alt="#" width="12" height="13" />
+        </div>
+        <div
+          class="exploreCard rounded-5 bg-white d-flex justify-content-around"
+          style="width: 1000px; height: 55px"
+        >
+          <div
+            class="wheretogo d-flex justify-content-center align-items-center"
+            style="width: 140px"
+          >
+            <img
+              src="Assets/wheretogo.png"
+              alt="#"
+              width="28px"
+              height="28px"
+            />
+            <span class="ps-2 pt-3">
+              <p class="small text-start" style="font-size: 12px">
+                Where To Go
+              </p>
+            </span>
+          </div>
+          <div
+            class="wheretogo d-flex justify-content-center align-items-center"
+            style="width: 188px"
+          >
+            <img
+              src="Assets/trip-money-1.png"
+              alt="#"
+              width="28px"
+              height="28px"
+            />
+            <span class="ps-2 pt-3">
+              <p class="small text-start">
+                <span style="font-size: 14px"> Insurance </span>
+                <span style="font-size: 12px"> For International Trips</span>
+              </p>
+            </span>
+          </div>
+          <div
+            class="wheretogo d-flex justify-content-center align-items-center"
+            style="width: 232px"
+          >
+            <img
+              src="Assets/dt_tert_flights.avif"
+              alt="#"
+              width="28px"
+              height="28px"
+            />
+            <span class="ps-2 pt-3">
+              <p class="small text-start">
+                <span class="fw-bold" style="font-size: 14px">
+                  Explore International flights</span
+                >
+                <span style="font-size: 12px">
+                  Cheapest Flights to Paris, Bali, Tokyo & more</span
+                >
+              </p>
+            </span>
+          </div>
+          <div
+            class="wheretogo d-flex justify-content-center align-items-center"
+            style="width: 188px"
+          >
+            <img
+              src="Assets/mice icon - square.png"
+              alt="#"
+              width="28px"
+              height="28px"
+            />
+            <span class="ps-2 pt-3">
+              <p class="small text-start">
+                <span style="font-size: 14px"> MICE</span>
+                <span style="font-size: 12px">
+                  Offsites, Events & Meetings</span
+                >
+              </p>
+            </span>
+          </div>
+          <div
+            class="gift border-none d-flex justify-content-center align-items-center"
+            style="width: 140px"
+          >
+            <img
+              src="Assets/gift card 1.png"
+              alt="#"
+              width="28px"
+              height="28px"
+            />
+            <span class="ps-2 pt-3">
+              <p class="small text-start" style="font-size: 12px">Gift Cards</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Header Section ends-->
+    <!--Offers Slider Start-->
+    <section class="pt-5">
+      <div class="container mx-auto">
+        <div class="wrapper rounded bg-white py-4 ps-4">
+          <!--Slider Header-->
+          <header class="p-2 card-heading d-flex align-items-center">
+            <div
+              class="firstSection d-flex justify-content-center align-items-start"
+            >
+              <h2 class="h1 fw-bolder">Offers</h2>
+            </div>
+
+            <ul
+              class="nav d-flex align-items-center"
+              style="width: 528px; height: 38px; justify-content: space-between"
+            >
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> All Offers </span>
+              </li>
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> Bank Offers </span>
+              </li>
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> Flights </span>
+              </li>
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> Hotels </span>
+              </li>
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> Holidays </span>
+              </li>
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> Trains </span>
+              </li>
+              <li class="list nav-item" onclick="changeStyle(this)">
+                <span class="h6"> Cabs </span>
+              </li>
+            </ul>
+
+            <ul class="pagination d-flex align-items-center">
+              <span class="h5 text-primary fw-bold p-3">View All</span>
+              <li class="page-item">
+                <button
+                  class="page-link btn"
+                  style="border-radius: 50px 0 0 50px"
+                  type="button"
+                  onclick="prevOfferCard()"
+                >
+                  <i id="left" class="bi bi-caret-left"></i>
+                </button>
+              </li>
+              <li class="page-item">
+                <button
+                  class="page-link btn"
+                  style="border-radius: 0 50px 50px 0"
+                  type="button"
+                  onclick="nextOfferCard()"
+                >
+                  <i id="right" class="bi bi-caret-right"></i>
+                </button>
+              </li>
+            </ul>
+          </header>
+
+          <!--Card Slider-->
+          <div class="offerCardContent">
+            <div class="offerRow row flex-nowrap">
+              <div
+                class="card offerCard mb-3 me-2"
+                style="width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4 col-4">
+                    <img
+                      src="Assets/Price-drop.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8 col-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        HOLIDAYS <br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >LIVE NOW: PACKAGE PRICE DROP DAYS!</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        Grab FLAT 45% OFF* on Holidays Packages
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/AirIndia-express.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        DOM FLIGHTS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >LIVE NOW: Sale by Air India Express</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        with up to 30% OFF* on flights to Bengaluru, Kannur +
+                        over 40 other destinations.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/Desktop-Trident.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        DOM HOTELS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >Recharge Yourself with a Relaxing Stay:</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        Grab Up to 25% Savings* on Stays @ Trident Hotels!
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/AirArabia.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        INTL FLIGHTS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >LAUNCHED: New Flights by Air Arabia</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        connecting Calicut and Ras Al Khaimah.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/Newdestination.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        INTL HOTELS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >It’s Now EASIER-THAN-EVER to Plan Trips to</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        Baku, Cairo, Almaty, Tashkent, Nairobi more! So, explore
+                        hotels book with us NOW.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/akasa.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        DOM FLIGHTS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >LIVE NOW: Sale by Akasa Air</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        with Up to 30% OFF* on Domestic Flights.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offerRow row flex-nowrap">
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/hdfc.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        INTL FLIGHTS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >Grab Up to ₹30,000 OFF* on</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        flights, hotels & holiday packages.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/Oberoi.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        DOM HOTELS <<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >Recharge Yourself with a Relaxing Stay:</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        Save Up to 25%* on Stays @ Oberoi Hotels & Resorts!
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/oyo.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        DOM HOTELS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >Book Comfortable Stays at OYO Hotels</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        with FLAT 22% OFF*!
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/thailand.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        INTL HOTELS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >Enjoy Early Check-in on Thailand Hotels &
+                          Homestay...</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        + Up to 25% OFF* on Your Stay.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/ATCab-Hyderabad.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 12px">
+                        CABS<br />
+                        <span class="fw-bold" style="font-size: 18px"
+                          >ONLY IN HYDERABAD: Book Cabs to/from Hyderabad
+                          Air...</span
+                        >
+                      </h5>
+                      <p class="card-text" style="font-size: 16px">
+                        <span
+                          class="d-block"
+                          style="
+                            border: 1px solid red;
+                            width: 33px;
+                            height: 1px;
+                          "
+                        ></span>
+                        Grab FLAT 45% OFF* on Holidays Packages
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card offerCard mb-3 me-2"
+                style="max-width: 482px; position: relative"
+              >
+                <div class="row g-0 p-2" style="width: 462px">
+                  <div class="col-md-4">
+                    <img
+                      src="Assets/SUV.avif"
+                      class="img-fluid rounded-3"
+                      style="width: 134px; height: 134px"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold" style="font-size: 12px">
+                        CABS<br />
+                        <span>NEW: SUV Cabs for Group Airport Transfers!</span>
+                      </h5>
+                      <p class="card-text">
+                        <span></span>
+                        Book @ FLAT 5% OFF*.
+                      </p>
+                      <div class="footer">
+                        <span class="ms-4 float-start">T&C's Apply</span>
+                        <span class="text-primary me-3 float-end h6 fw-bold"
+                          >BOOK NOW</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Offers Slider ends-->
+    <!--Highlights starts-->
+    <section id="highlights">
+      <div class="container">
+        <div class="cards-wrapper">
+          <div class="card Highlightcard rounded-4">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Assets/flight.png"
+                    alt="flight"
+                    width="68"
+                    height="68"
+                  />
+                </div>
+                <div class="col-8">
+                  <p
+                    class="text-dark"
+                    style="font-size: 16px; line-height: 18px"
+                  >
+                    Book Flights with Voice Chat!<br />
+                    Code: <b class="fw-bolder">MMTMYRA</b> will be auto-applied
+                    for EXTRA discounts!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card Highlightcard rounded-4">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Assets/indiannessapphome.avif"
+                    alt="flight"
+                    width="68"
+                    height="68"
+                  />
+                </div>
+                <div class="col-8">
+                  <p
+                    class="text-dark"
+                    style="font-size: 16px; line-height: 18px"
+                  >
+                    Finding Indian Food just got easier! Use newly launched
+                    filters to find Indian food during International travel
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card Highlightcard rounded-4">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Assets/Vande-Flight.avif"
+                    alt="flight"
+                    width="86"
+                    height="68"
+                  />
+                </div>
+                <div class="col-8">
+                  <p
+                    class="text-dark"
+                    style="font-size: 16px; line-height: 18px"
+                  >
+                    Planning to book an international flight?<br />
+                    <b class="fw-bolder text-primary"
+                      >Check Travel Guidelines</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card Highlightcard rounded-4">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Assets/language.avif"
+                    alt="flight"
+                    width="68"
+                    height="68"
+                  />
+                </div>
+                <div class="col-8">
+                  <p
+                    class="text-dark"
+                    style="font-size: 16px; line-height: 18px"
+                  >
+                    We are now available in हिंदी!<br />
+                    <b class="fw-bolder text-primary">Choose Language</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card Highlightcard rounded-4">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Assets/web-check-in.png"
+                    alt="flight"
+                    width="68"
+                    height="68"
+                  />
+                </div>
+                <div class="col-8">
+                  <p
+                    class="text-dark"
+                    style="font-size: 16px; line-height: 18px"
+                  >
+                    Complete your web check-in on MakeMyTrip in easy steps.
+                    <br />
+                    <b class="fw-bolder">Know More</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card Highlightcard rounded-4">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Assets/RIL_1.avif"
+                    alt="flight"
+                    width="68"
+                    height="68"
+                  />
+                </div>
+                <div class="col-8">
+                  <p
+                    class="text-dark"
+                    style="font-size: 16px; line-height: 18px"
+                  >
+                    Travel light, leave your worries behind with Reliance
+                    General Insurance<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-button text-primary prev" onclick="prevSlide()">
+          ❮
+        </div>
+        <div class="carousel-button text-primary next" onclick="nextSlide()">
+          ❯
+        </div>
+      </div>
+    </section>
+    <!--highlights ends-->
+    <!--ad starts-->
+    <section id="ad" class="mt-5 mb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <img
+              class="ad-image img-fluid"
+              width="968"
+              src="Assets/ad.jfif"
+              alt="ad"
+            />
+            <img
+              class="ad-sponsor d-none d-lg-block"
+              src="Assets/sponsored.png"
+              alt="sponsor"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ad ends-->
+    <!--Download Start-->
+    <section id="enjoy" class="">
+      <div class="DownloadContainer mx-auto">
+        <div class="row justify-content-center">
+          <div class="card" style="max-width: 1176px" id="enjoy-card">
+            <div class="card-body">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8">
+                  <div
+                    class="d-flex justify-content-around align-items-center"
+                    style="flex-direction: row"
+                  >
+                    <i class="bi bi-download"></i>
+                    <div class="d-flex" style="flex-direction: column">
+                      <h3 class="h2 fw-bolder">Download App Now !</h3>
+                      <p style="font-size: 16px ps-2">
+                        Use code <b>WELCOMEMMT</b> and get <b>FLAT 12%</b> OFF*
+                        on your first domestic flight booking
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="input-group mb-3"
+                    style="width: 530px; height: 40px"
+                  >
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        style="width: 370px"
+                      />
+                      <label for="floatingInput">
+                        <span>
+                          <img
+                            src="https://imgak.mmtcdn.com/pwa_v3/pwa_mmt_ui_assets/in_v2.png"
+                            width="23px"
+                            height="19px"
+                          />
+                        </span>
+                        <span> +91 — Enter Mobile number </span>
+                      </label>
+                    </div>
+
+                    <span
+                      class="input-group-text btn btn-outline-primary fw-bold"
+                      id="basic-addon2"
+                      type="submit"
+                      style="width: 160px"
+                      >GET APP LINK</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-lg-2 d-flex justify-content-end align-items-center"
+                >
+                  <div class="ms-4">
+                    <img
+                      class="mt-3"
+                      src="Assets/QRCode.avif"
+                      alt="qr-code"
+                      width="105"
+                      height="105"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-lg-2 d-flex justify-content-end align-items-center"
+                >
+                  <div class="ms-4">
+                    <img
+                      class="mt-3"
+                      src="Assets/playStore.svg"
+                      alt="playStore"
+                    />
+                    <img
+                      class="mt-3"
+                      src="Assets/appStore.svg"
+                      alt="appStore"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Download end-->
+    <!--TripIdea Card Slider Starts-->
+    <section>
+      <div class="container mx-auto">
+        <div class="wrapper rounded bg-white py-4 ps-4">
+          <!--Slider Header-->
+          <header class="p-2 card-heading">
+            <h2 class="h1 fw-bolder">Handpicked Collections for You</h2>
+            <ul class="pagination">
+              <li class="page-item">
+                <button
+                  class="page-link btn"
+                  style="border-radius: 50px 0 0 50px"
+                  type="button"
+                  onclick="prevTripIdeaCard()"
+                >
+                  <i id="left" class="bi bi-caret-left"></i>
+                </button>
+              </li>
+              <li class="page-item">
+                <button
+                  class="page-link btn"
+                  style="border-radius: 0 50px 50px 0"
+                  type="button"
+                  onclick="nextTripIdeaCard()"
+                >
+                  <i id="right" class="bi bi-caret-right"></i>
+                </button>
+              </li>
+            </ul>
+          </header>
+
+          <!--Card Slider-->
+          <div
+            class="TripIdeaRow row flex-nowrap"
+            style="transition: transform 0.6s ease-in-out"
+          >
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/Tehri_Uttarakhandavif.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >
+                  Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/Radisson_blu_image_seo.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >
+                  TamilNadu's Charming Hill Town
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="
+                background-image: url(Assets/Waterwoods\ Lodges\ &\ Resorts_Kabini.webp);
+              "
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >
+                  PictureSque GateWay to Himalayas
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/beach44_p_540_417.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >
+                  Quaint Littel Hill Station in Gujarat
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/weekend.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >
+                  A Pleasant summer retreat and a snowy winter wonderland!
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/mandarmon.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >
+                  Seaside Resort Village in West bengal
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="
+                background-image: url(Assets/hill_stations11_p_540_417.avif);
+              "
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/Narkanda.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+            <div
+              class="cardstyle card"
+              style="background-image: url(Assets/Narkanda.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white fw-bold text-start">
+                  <span
+                    class="bg-white p-1 text-dark rounded d-flex"
+                    style="width: 50px"
+                    >Top 8</span
+                  >Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TripIdea Card Slider ends-->
+
+    <!--Destination card Slider Starts-->
+    <section>
+      <div class="container mx-auto">
+        <div class="wrapper rounded bg-white py-4 ps-4">
+          <!--Slider Header-->
+          <header class="p-2 card-heading">
+            <h2 class="h1 fw-bolder">Unlock Lesser-known Wonders Of India</h2>
+            <ul class="pagination">
+              <li class="page-item">
+                <button
+                  class="page-link btn"
+                  style="border-radius: 50px 0 0 50px"
+                  type="button"
+                  onclick="prevDestinationCard()"
+                >
+                  <i id="left" class="bi bi-caret-left"></i>
+                </button>
+              </li>
+              <li class="page-item">
+                <button
+                  class="page-link btn"
+                  style="border-radius: 0 50px 50px 0"
+                  type="button"
+                  onclick="nextDestinationCard()"
+                >
+                  <i id="right" class="bi bi-caret-right"></i>
+                </button>
+              </li>
+            </ul>
+          </header>
+
+          <!--Card Slider-->
+          <div
+            class="destinationRow row flex-nowrap"
+            style="transition: transform 0.6s ease-in-out"
+          >
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/Narkanda.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/yercaud.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  TamilNadu's Charming Hill Town
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/Dooars.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  PictureSque GateWay to Himalayas
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/saputara-.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  Quaint Littel Hill Station in Gujarat
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/Dhanault.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  A Pleasant summer retreat and a snowy winter wonderland!
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/mandarmon.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  Seaside Resort Village in West bengal
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/Narkanda.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/Narkanda.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+            <div
+              class="destinationCard cardstyle card"
+              style="background-image: url(Assets/Narkanda.avif)"
+            >
+              <div class="footer">
+                <p class="h6 text-white text-start fw-bold">
+                  Shimla's Best Kept Secret
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Destination card Slider ends-->
+
+    <!--TripMoney Starts-->
+    <section>
+      <div class="container-lg mx-auto">
+        <div class="row justify-content-center mx-auto">
+          <div class="col-lg-11">
+            <div
+              class="card"
+              id="cardBorder"
+              style="border: 2px solid rgb(255, 203, 202)"
+            >
+              <div class="card-body">
+                <div class="row justify-content-center align-items-center">
+                  <div
+                    class="col-lg-10 col-md-8 py-1 ps0-0 d-flex justify-content-start align-items-center"
+                  >
+                    <img
+                      id="imgPostion"
+                      src="Assets/travelLoan.png"
+                      width="70px"
+                      height="61px"
+                      alt=""
+                    />
+                    <div class="px-3 d-flex align-items-center">
+                      <img
+                        class="img-fluid trip"
+                        src="Assets/tripmoney.png"
+                        width="110px"
+                        height="41px"
+                        alt=""
+                      />
+                      <p class="h5 px-2">
+                        <span class="h5 fw-bolder">Forex </span>at best exchange
+                        rates delivered at your doorstep
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 text-center">
+                    <a
+                      class="text-primary link-underline-light fw-bold"
+                      href="#"
+                      >ORDER NOW</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TripMoney ends-->
+
+    <!--footer Start-->
+    <footer>
+      <div class="footNav container-fluid">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-lg-9">
+            <div class="footNav py-5">
+              <p class="para para">Product Offering</p>
+              <ul class="footNav__list">
+                <li><a data-cy="anchor-Flights-00">Flights</a>,&nbsp;</li>
+                <li data-cy="International Flights-01">
+                  <a data-cy="anchor-International Flights-01"
+                    >International Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Charter Flights-02">
+                  <a data-cy="anchor-Charter Flights-02">Charter Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels-03">
+                  <a data-cy="anchor-Hotels-03">Hotels</a>,&nbsp;
+                </li>
+                <li data-cy="International Hotels-04">
+                  <a data-cy="anchor-International Hotels-04"
+                    >International Hotels</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Homestays and Villas-05">
+                  <a data-cy="anchor-Homestays and Villas-05"
+                    >Homestays and Villas</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Activities-06">
+                  <a data-cy="anchor-Activities-06">Activities</a>,&nbsp;
+                </li>
+                <li data-cy="Holidays In India-07">
+                  <a data-cy="anchor-Holidays In India-07">Holidays In India</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="International Holidays-08">
+                  <a data-cy="anchor-International Holidays-08"
+                    >International Holidays</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Book Hotels From UAE-09">
+                  <a data-cy="anchor-Book Hotels From UAE-09"
+                    >Book Hotels From UAE</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="myBiz for Corporate Travel-010">
+                  <a data-cy="anchor-myBiz for Corporate Travel-010"
+                    >myBiz for Corporate Travel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Book Online Cabs-011">
+                  <a data-cy="anchor-Book Online Cabs-011">Book Online Cabs</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Book Bus Tickets-012">
+                  <a data-cy="anchor-Book Bus Tickets-012">Book Bus Tickets</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Book Train Tickets-013">
+                  <a data-cy="anchor-Book Train Tickets-013"
+                    >Book Train Tickets</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Cheap Tickets to India-014">
+                  <a data-cy="anchor-Cheap Tickets to India-014"
+                    >Cheap Tickets to India</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Book Flights From US-015">
+                  <a data-cy="anchor-Book Flights From US-015"
+                    >Book Flights From US</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Book Flights From UAE-016">
+                  <a data-cy="anchor-Book Flights From UAE-016"
+                    >Book Flights From UAE</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Trip Planner-017">
+                  <a data-cy="anchor-Trip Planner-017">Trip Planner</a>,&nbsp;
+                </li>
+                <li data-cy="Gift  card cardstyles-018">
+                  <a data-cy="anchor-Gift  card cardstyles-018"
+                    >Gift card cardstyles</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Trip Money-019">
+                  <a data-cy="anchor-Trip Money-019">Trip Money</a>,&nbsp;
+                </li>
+                <li data-cy="Trip Ideas-020">
+                  <a data-cy="anchor-Trip Ideas-020">Trip Ideas</a>,&nbsp;
+                </li>
+                <li data-cy="Travel Blog-021">
+                  <a data-cy="anchor-Travel Blog-021">Travel Blog</a>,&nbsp;
+                </li>
+                <li data-cy="PNR Status-022">
+                  <a data-cy="anchor-PNR Status-022">PNR Status</a>,&nbsp;
+                </li>
+                <li data-cy="MakeMyTrip Advertising Solutions-023">
+                  <a data-cy="anchor-MakeMyTrip Advertising Solutions-023"
+                    >MakeMyTrip Advertising Solutions</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="One Way Cab-024">
+                  <a data-cy="anchor-One Way Cab-024">One Way Cab</a>
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                MakeMyTrip
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="About Us-10">
+                  <a data-cy="anchor-About Us-10">About Us</a>,&nbsp;
+                </li>
+                <li data-cy="Investor Relations-11">
+                  <a data-cy="anchor-Investor Relations-11"
+                    >Investor Relations</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Careers-12">
+                  <a data-cy="anchor-Careers-12">Careers</a>,&nbsp;
+                </li>
+                <li data-cy="MMT Foundation-13">
+                  <a data-cy="anchor-MMT Foundation-13">MMT Foundation</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="CSR Policy-14">
+                  <a data-cy="anchor-CSR Policy-14">CSR Policy</a>,&nbsp;
+                </li>
+                <li data-cy="myPartner - Travel Agent Portal-15">
+                  <a data-cy="anchor-myPartner - Travel Agent Portal-15"
+                    >myPartner - Travel Agent Portal</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Foreign Exchange-16">
+                  <a data-cy="anchor-Foreign Exchange-16">Foreign Exchange</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="List your hotel-17">
+                  <a data-cy="anchor-List your hotel-17">List your hotel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Partners- Redbus-18">
+                  <a data-cy="anchor-Partners- Redbus-18">Partners- Redbus</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Partners- Goibibo-19">
+                  <a data-cy="anchor-Partners- Goibibo-19">Partners- Goibibo</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Partners- BookMyForex-110">
+                  <a data-cy="anchor-Partners- BookMyForex-110"
+                    >Partners- BookMyForex</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Advertise with Us-111">
+                  <a data-cy="anchor-Advertise with Us-111">Advertise with Us</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="RedBus Ferry Malaysia-112">
+                  <a data-cy="anchor-RedBus Ferry Malaysia-112"
+                    >RedBus Ferry Malaysia</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="RedBus Ferry Singapore-113">
+                  <a data-cy="anchor-RedBus Ferry Singapore-113"
+                    >RedBus Ferry Singapore</a
+                  >
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                About the Site
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="Customer Support-20">
+                  <a data-cy="anchor-Customer Support-20">Customer Support</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Payment Security-21">
+                  <a data-cy="anchor-Payment Security-21">Payment Security</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Privacy Policy-22">
+                  <a data-cy="anchor-Privacy Policy-22">Privacy Policy</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Cookie Policy-23">
+                  <a data-cy="anchor-Cookie Policy-23">Cookie Policy</a>,&nbsp;
+                </li>
+                <li data-cy="User Agreement-24">
+                  <a data-cy="anchor-User Agreement-24">User Agreement</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Terms of Service-25">
+                  <a data-cy="anchor-Terms of Service-25">Terms of Service</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="More Offices-26">
+                  <a data-cy="anchor-More Offices-26">More Offices</a>,&nbsp;
+                </li>
+                <li data-cy="Make A Payment-27">
+                  <a data-cy="anchor-Make A Payment-27">Make A Payment</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Work From Home-28">
+                  <a data-cy="anchor-Work From Home-28">Work From Home</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Report Security Issues-29">
+                  <a data-cy="anchor-Report Security Issues-29"
+                    >Report Security Issues</a
+                  >
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                Top Hotels in India
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="Fairmont Jaipur-30">
+                  <a data-cy="anchor-Fairmont Jaipur-30">Fairmont Jaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="St Regis Goa-31">
+                  <a data-cy="anchor-St Regis Goa-31">St Regis Goa</a>,&nbsp;
+                </li>
+                <li data-cy="Six Senses Fort Barwara-32">
+                  <a data-cy="anchor-Six Senses Fort Barwara-32"
+                    >Six Senses Fort Barwara</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="W Goa-33">
+                  <a data-cy="anchor-W Goa-33">W Goa</a>,&nbsp;
+                </li>
+                <li data-cy="Grand Hyatt Goa-34">
+                  <a data-cy="anchor-Grand Hyatt Goa-34">Grand Hyatt Goa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Shangri-La Bangalore-35">
+                  <a data-cy="anchor-Shangri-La Bangalore-35"
+                    >Shangri-La Bangalore</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The St Regis Mumbai-36">
+                  <a data-cy="anchor-The St Regis Mumbai-36"
+                    >The St Regis Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Rishikesh-37">
+                  <a data-cy="anchor-Taj Rishikesh-37">Taj Rishikesh</a>,&nbsp;
+                </li>
+                <li data-cy="Grand Hyatt Mumbai-38">
+                  <a data-cy="anchor-Grand Hyatt Mumbai-38"
+                    >Grand Hyatt Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Le Meridien Delhi-39">
+                  <a data-cy="anchor-Le Meridien Delhi-39">Le Meridien Delhi</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Rambagh Palace Jaipur-310">
+                  <a data-cy="anchor-Rambagh Palace Jaipur-310"
+                    >Rambagh Palace Jaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Leela Palace Chennai-311">
+                  <a data-cy="anchor-Leela Palace Chennai-311"
+                    >Leela Palace Chennai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Leela Palace Udaipur-312">
+                  <a data-cy="anchor-The Leela Palace Udaipur-312"
+                    >The Leela Palace Udaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Lake Palace Udaipur-313">
+                  <a data-cy="anchor-Taj Lake Palace Udaipur-313"
+                    >Taj Lake Palace Udaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Jw Marriott Chandigarh-314">
+                  <a data-cy="anchor-Jw Marriott Chandigarh-314"
+                    >Jw Marriott Chandigarh</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Alila Diwa Goa-315">
+                  <a data-cy="anchor-Alila Diwa Goa-315">Alila Diwa Goa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Le Meridien Goa-316">
+                  <a data-cy="anchor-Le Meridien Goa-316">Le Meridien Goa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Lands End Mumbai-317">
+                  <a data-cy="anchor-Taj Lands End Mumbai-317"
+                    >Taj Lands End Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Itc Grand Chola Chennai-318">
+                  <a data-cy="anchor-Itc Grand Chola Chennai-318"
+                    >Itc Grand Chola Chennai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Itc Maratha Mumbai-319">
+                  <a data-cy="anchor-Itc Maratha Mumbai-319"
+                    >Itc Maratha Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Oberoi Udaivilas-320">
+                  <a data-cy="anchor-Oberoi Udaivilas-320">Oberoi Udaivilas</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Jai Mahal Palace Jaipur-321">
+                  <a data-cy="anchor-Jai Mahal Palace Jaipur-321"
+                    >Jai Mahal Palace Jaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Mahal Tower Mumbai-322">
+                  <a data-cy="anchor-Taj Mahal Tower Mumbai-322"
+                    >Taj Mahal Tower Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Marriott Suites Pune-323">
+                  <a data-cy="anchor-Marriott Suites Pune-323"
+                    >Marriott Suites Pune</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Park Hyatt Chennai-324">
+                  <a data-cy="anchor-Park Hyatt Chennai-324"
+                    >Park Hyatt Chennai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Leela Palace Jaipur-325">
+                  <a data-cy="anchor-The Leela Palace Jaipur-325"
+                    >The Leela Palace Jaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Jw Marriott Mumbai Sahar-326">
+                  <a data-cy="anchor-Jw Marriott Mumbai Sahar-326"
+                    >Jw Marriott Mumbai Sahar</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Jw Marriott Mumbai Juhu-327">
+                  <a data-cy="anchor-Jw Marriott Mumbai Juhu-327"
+                    >Jw Marriott Mumbai Juhu</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Ritz Carlton Bengaluru-328">
+                  <a data-cy="anchor-The Ritz Carlton Bengaluru-328"
+                    >The Ritz Carlton Bengaluru</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Oberoi New Delhi-329">
+                  <a data-cy="anchor-The Oberoi New Delhi-329"
+                    >The Oberoi New Delhi</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Resort &amp; Convention Centre Goa-330">
+                  <a data-cy="anchor-Taj Resort &amp; Convention Centre Goa-330"
+                    >Taj Resort &amp; Convention Centre Goa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Bengal Kolkata-331">
+                  <a data-cy="anchor-Taj Bengal Kolkata-331"
+                    >Taj Bengal Kolkata</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Coromandel Chennai-332">
+                  <a data-cy="anchor-Taj Coromandel Chennai-332"
+                    >Taj Coromandel Chennai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Oberoi Gurgaon-333">
+                  <a data-cy="anchor-The Oberoi Gurgaon-333"
+                    >The Oberoi Gurgaon</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Westin Goa-334">
+                  <a data-cy="anchor-The Westin Goa-334">The Westin Goa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Jw Marriott Hotel Pune-335">
+                  <a data-cy="anchor-Jw Marriott Hotel Pune-335"
+                    >Jw Marriott Hotel Pune</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Leela Palace New Delhi-336">
+                  <a data-cy="anchor-The Leela Palace New Delhi-336"
+                    >The Leela Palace New Delhi</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj West End Bengaluru-337">
+                  <a data-cy="anchor-Taj West End Bengaluru-337"
+                    >Taj West End Bengaluru</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Taj Mahal Palace Mumbai-338">
+                  <a data-cy="anchor-The Taj Mahal Palace Mumbai-338"
+                    >The Taj Mahal Palace Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Best Hotels in India-339">
+                  <a data-cy="anchor-Best Hotels in India-339"
+                    >Best Hotels in India</a
+                  >
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                Top International hotels
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="Adaaran Club Rannalhi-40">
+                  <a data-cy="anchor-Adaaran Club Rannalhi-40"
+                    >Adaaran Club Rannalhi</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Marina Bay Sands Singapore-41">
+                  <a data-cy="anchor-Marina Bay Sands Singapore-41"
+                    >Marina Bay Sands Singapore</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Coco Bodu Hithi-42">
+                  <a data-cy="anchor-Coco Bodu Hithi-42">Coco Bodu Hithi</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Dubai-43">
+                  <a data-cy="anchor-Taj Dubai-43">Taj Dubai</a>,&nbsp;
+                </li>
+                <li data-cy="Atlantis Hotel Dubai-44">
+                  <a data-cy="anchor-Atlantis Hotel Dubai-44"
+                    >Atlantis Hotel Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Amari Phuket-45">
+                  <a data-cy="anchor-Amari Phuket-45">Amari Phuket</a>,&nbsp;
+                </li>
+                <li data-cy="Jw Marriott Dubai-46">
+                  <a data-cy="anchor-Jw Marriott Dubai-46">Jw Marriott Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Armani Hotel Dubai-47">
+                  <a data-cy="anchor-Armani Hotel Dubai-47"
+                    >Armani Hotel Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Grand Hyatt Dubai-48">
+                  <a data-cy="anchor-Grand Hyatt Dubai-48">Grand Hyatt Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Saii Lagoon Maldives-49">
+                  <a data-cy="anchor-Saii Lagoon Maldives-49"
+                    >Saii Lagoon Maldives</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Gevora Hotel Dubai-410">
+                  <a data-cy="anchor-Gevora Hotel Dubai-410"
+                    >Gevora Hotel Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hyatt Regency Dubai-411">
+                  <a data-cy="anchor-Hyatt Regency Dubai-411"
+                    >Hyatt Regency Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Pan Pacific Singapore-412">
+                  <a data-cy="anchor-Pan Pacific Singapore-412"
+                    >Pan Pacific Singapore</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Palm Dubai-413">
+                  <a data-cy="anchor-The Palm Dubai-413">The Palm Dubai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Caesars Palace-414">
+                  <a data-cy="anchor-Caesars Palace-414">Caesars Palace</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Baiyoke Sky Hotel-415">
+                  <a data-cy="anchor-Baiyoke Sky Hotel-415">Baiyoke Sky Hotel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Centara Pattaya Hotel-416">
+                  <a data-cy="anchor-Centara Pattaya Hotel-416"
+                    >Centara Pattaya Hotel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Embudu Village-417">
+                  <a data-cy="anchor-Embudu Village-417">Embudu Village</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Orchard Hotel Singapore-418">
+                  <a data-cy="anchor-Orchard Hotel Singapore-418"
+                    >Orchard Hotel Singapore</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Reethi Beach Resort-419">
+                  <a data-cy="anchor-Reethi Beach Resort-419"
+                    >Reethi Beach Resort</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Ambassador Hotel Bangkok-420">
+                  <a data-cy="anchor-Ambassador Hotel Bangkok-420"
+                    >Ambassador Hotel Bangkok</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Dusit Thani Pattaya-421">
+                  <a data-cy="anchor-Dusit Thani Pattaya-421"
+                    >Dusit Thani Pattaya</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Shangri La Singapore-422">
+                  <a data-cy="anchor-Shangri La Singapore-422"
+                    >Shangri La Singapore</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Sunbeam Hotel Pattaya-423">
+                  <a data-cy="anchor-Sunbeam Hotel Pattaya-423"
+                    >Sunbeam Hotel Pattaya</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Samudra Colombo-424">
+                  <a data-cy="anchor-Taj Samudra Colombo-424"
+                    >Taj Samudra Colombo</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Bangkok Palace Hotel-425">
+                  <a data-cy="anchor-Bangkok Palace Hotel-425"
+                    >Bangkok Palace Hotel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hilton Pattaya-426">
+                  <a data-cy="anchor-Hilton Pattaya-426">Hilton Pattaya</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Novotel Phuket Resort-427">
+                  <a data-cy="anchor-Novotel Phuket Resort-427"
+                    >Novotel Phuket Resort</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Taj Exotica Resort Maldives-428">
+                  <a data-cy="anchor-Taj Exotica Resort Maldives-428"
+                    >Taj Exotica Resort Maldives</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Village Hotel Bugis-429">
+                  <a data-cy="anchor-Village Hotel Bugis-429"
+                    >Village Hotel Bugis</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Avani Atrium Bangkok-430">
+                  <a data-cy="anchor-Avani Atrium Bangkok-430"
+                    >Avani Atrium Bangkok</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="The Plaza New York-431">
+                  <a data-cy="anchor-The Plaza New York-431"
+                    >The Plaza New York</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Village Hotel Albert Court-432">
+                  <a data-cy="anchor-Village Hotel Albert Court-432"
+                    >Village Hotel Albert Court</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Amari Pattaya-433">
+                  <a data-cy="anchor-Amari Pattaya-433">Amari Pattaya</a>
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                Quick Links
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="Delhi Chennai Flights-50">
+                  <a data-cy="anchor-Delhi Chennai Flights-50"
+                    >Delhi Chennai Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Delhi Mumbai Flights-51">
+                  <a data-cy="anchor-Delhi Mumbai Flights-51"
+                    >Delhi Mumbai Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Delhi Goa Flights-52">
+                  <a data-cy="anchor-Delhi Goa Flights-52">Delhi Goa Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Chennai Mumbai flights-53">
+                  <a data-cy="anchor-Chennai Mumbai flights-53"
+                    >Chennai Mumbai flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Mumbai Hyderabad flights-54">
+                  <a data-cy="anchor-Mumbai Hyderabad flights-54"
+                    >Mumbai Hyderabad flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Kolkata to Rupsi Flights-55">
+                  <a data-cy="anchor-Kolkata to Rupsi Flights-55"
+                    >Kolkata to Rupsi Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Rupsi to Guwahati Flights-56">
+                  <a data-cy="anchor-Rupsi to Guwahati Flights-56"
+                    >Rupsi to Guwahati Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Pasighat to Guwahati Flights-57">
+                  <a data-cy="anchor-Pasighat to Guwahati Flights-57"
+                    >Pasighat to Guwahati Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Delhi to Khajuraho Flights-58">
+                  <a data-cy="anchor-Delhi to Khajuraho Flights-58"
+                    >Delhi to Khajuraho Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Cochin to Agatti Island Flights-59">
+                  <a data-cy="anchor-Cochin to Agatti Island Flights-59"
+                    >Cochin to Agatti Island Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels in Delhi-510">
+                  <a data-cy="anchor-Hotels in Delhi-510">Hotels in Delhi</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels in Mumbai-511">
+                  <a data-cy="anchor-Hotels in Mumbai-511">Hotels in Mumbai</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels In Goa-512">
+                  <a data-cy="anchor-Hotels In Goa-512">Hotels In Goa</a>,&nbsp;
+                </li>
+                <li data-cy="Hotels In Jaipur-513">
+                  <a data-cy="anchor-Hotels In Jaipur-513">Hotels In Jaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels In Ooty-514">
+                  <a data-cy="anchor-Hotels In Ooty-514">Hotels In Ooty</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels In Udaipur-515">
+                  <a data-cy="anchor-Hotels In Udaipur-515">Hotels In Udaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels in Puri-516">
+                  <a data-cy="anchor-Hotels in Puri-516">Hotels in Puri</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels In North Goa-517">
+                  <a data-cy="anchor-Hotels In North Goa-517"
+                    >Hotels In North Goa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels In Rishikesh-518">
+                  <a data-cy="anchor-Hotels In Rishikesh-518"
+                    >Hotels In Rishikesh</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Honeymoon Packages-519">
+                  <a data-cy="anchor-Honeymoon Packages-519"
+                    >Honeymoon Packages</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Kerala Packages-520">
+                  <a data-cy="anchor-Kerala Packages-520">Kerala Packages</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Kashmir Packages-521">
+                  <a data-cy="anchor-Kashmir Packages-521">Kashmir Packages</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Ladakh Packages-522">
+                  <a data-cy="anchor-Ladakh Packages-522">Ladakh Packages</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Goa Packages-523">
+                  <a data-cy="anchor-Goa Packages-523">Goa Packages</a>,&nbsp;
+                </li>
+                <li data-cy="Thailand Packages-524">
+                  <a data-cy="anchor-Thailand Packages-524">Thailand Packages</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Sri Lanka Visa-525">
+                  <a data-cy="anchor-Sri Lanka Visa-525">Sri Lanka Visa</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Thailand Visa-526">
+                  <a data-cy="anchor-Thailand Visa-526">Thailand Visa</a>,&nbsp;
+                </li>
+                <li data-cy="Explore Goa-527">
+                  <a data-cy="anchor-Explore Goa-527">Explore Goa</a>,&nbsp;
+                </li>
+                <li data-cy="Explore Manali-528">
+                  <a data-cy="anchor-Explore Manali-528">Explore Manali</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Explore Shimla-529">
+                  <a data-cy="anchor-Explore Shimla-529">Explore Shimla</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Explore Jaipur-530">
+                  <a data-cy="anchor-Explore Jaipur-530">Explore Jaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Explore Srinagar-531">
+                  <a data-cy="anchor-Explore Srinagar-531">Explore Srinagar</a>
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                Important Links
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="Cheap Flights-60">
+                  <a data-cy="anchor-Cheap Flights-60">Cheap Flights</a>,&nbsp;
+                </li>
+                <li data-cy="Flight Status-61">
+                  <a data-cy="anchor-Flight Status-61">Flight Status</a>,&nbsp;
+                </li>
+                <li data-cy="Kumbh Mela-62">
+                  <a data-cy="anchor-Kumbh Mela-62">Kumbh Mela</a>,&nbsp;
+                </li>
+                <li data-cy="Domestic Airlines-63">
+                  <a data-cy="anchor-Domestic Airlines-63">Domestic Airlines</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="International Airlines-64">
+                  <a data-cy="anchor-International Airlines-64"
+                    >International Airlines</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Indigo-65">
+                  <a data-cy="anchor-Indigo-65">Indigo</a>,&nbsp;
+                </li>
+                <li data-cy="Spicejet-66">
+                  <a data-cy="anchor-Spicejet-66">Spicejet</a>,&nbsp;
+                </li>
+                <li data-cy="GoAir-67">
+                  <a data-cy="anchor-GoAir-67">GoAir</a>,&nbsp;
+                </li>
+                <li data-cy="Air Asia-68">
+                  <a data-cy="anchor-Air Asia-68">Air Asia</a>,&nbsp;
+                </li>
+                <li data-cy="Air India-69">
+                  <a data-cy="anchor-Air India-69">Air India</a>,&nbsp;
+                </li>
+                <li data-cy="Indian Railways-610">
+                  <a data-cy="anchor-Indian Railways-610">Indian Railways</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Trip Ideas-611">
+                  <a data-cy="anchor-Trip Ideas-611">Trip Ideas</a>,&nbsp;
+                </li>
+                <li data-cy="Beaches-612">
+                  <a data-cy="anchor-Beaches-612">Beaches</a>,&nbsp;
+                </li>
+                <li data-cy="Honeymoon Destinations-613">
+                  <a data-cy="anchor-Honeymoon Destinations-613"
+                    >Honeymoon Destinations</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Romantic Destinations-614">
+                  <a data-cy="anchor-Romantic Destinations-614"
+                    >Romantic Destinations</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Popular Destinations-615">
+                  <a data-cy="anchor-Popular Destinations-615"
+                    >Popular Destinations</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Resorts In Udaipur-616">
+                  <a data-cy="anchor-Resorts In Udaipur-616"
+                    >Resorts In Udaipur</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Resorts In Munnar-617">
+                  <a data-cy="anchor-Resorts In Munnar-617">Resorts In Munnar</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Villas In Lonavala-618">
+                  <a data-cy="anchor-Villas In Lonavala-618"
+                    >Villas In Lonavala</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Hotels in Thailand-619">
+                  <a data-cy="anchor-Hotels in Thailand-619"
+                    >Hotels in Thailand</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Villas In Goa-620">
+                  <a data-cy="anchor-Villas In Goa-620">Villas In Goa</a>,&nbsp;
+                </li>
+                <li data-cy="Domestic Flight Offers-621">
+                  <a data-cy="anchor-Domestic Flight Offers-621"
+                    >Domestic Flight Offers</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="International Flight Offers-622">
+                  <a data-cy="anchor-International Flight Offers-622"
+                    >International Flight Offers</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="UAE Flight Offers-623">
+                  <a data-cy="anchor-UAE Flight Offers-623">UAE Flight Offers</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="USA-624">
+                  <a data-cy="anchor-USA-624">USA</a>,&nbsp;
+                </li>
+                <li data-cy="UAE-625">
+                  <a data-cy="anchor-UAE-625">UAE</a>,&nbsp;
+                </li>
+                <li data-cy="Saudi Arabia-626">
+                  <a data-cy="anchor-Saudi Arabia-626">Saudi Arabia</a>,&nbsp;
+                </li>
+                <li data-cy="UK-627">
+                  <a data-cy="anchor-UK-627">UK</a>,&nbsp;
+                </li>
+                <li data-cy="Oman-628">
+                  <a data-cy="anchor-Oman-628">Oman</a>
+                </li>
+              </ul>
+              <p class="para latoBlack blackText font10 appendBottom10 capText">
+                Corporate Travel
+              </p>
+              <ul class="footNav__list">
+                <li data-cy="Corporate Travel-70">
+                  <a data-cy="anchor-Corporate Travel-70">Corporate Travel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Corporate Hotel Booking-71">
+                  <a data-cy="anchor-Corporate Hotel Booking-71"
+                    >Corporate Hotel Booking</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Corporate Flight Booking-72">
+                  <a data-cy="anchor-Corporate Flight Booking-72"
+                    >Corporate Flight Booking</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Business Travel for SME-73">
+                  <a data-cy="anchor-Business Travel for SME-73"
+                    >Business Travel for SME</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="GST Invoice for International flights-74">
+                  <a data-cy="anchor-GST Invoice for International flights-74"
+                    >GST Invoice for International flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Business Travel Solutions-75">
+                  <a data-cy="anchor-Business Travel Solutions-75"
+                    >Business Travel Solutions</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="GST Invoice for Bus-76">
+                  <a data-cy="anchor-GST Invoice for Bus-76"
+                    >GST Invoice for Bus</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Corporate Bus booking-77">
+                  <a data-cy="anchor-Corporate Bus booking-77"
+                    >Corporate Bus booking</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="myBiz - Best Business Travel Platform-78">
+                  <a data-cy="anchor-myBiz - Best Business Travel Platform-78"
+                    >myBiz - Best Business Travel Platform</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="GST Invoice for Flights-79">
+                  <a data-cy="anchor-GST Invoice for Flights-79"
+                    >GST Invoice for Flights</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="GST Invoice for Corporate Travel-710">
+                  <a data-cy="anchor-GST Invoice for Corporate Travel-710"
+                    >GST Invoice for Corporate Travel</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="GST Invoice for Hotels-711">
+                  <a data-cy="anchor-GST Invoice for Hotels-711"
+                    >GST Invoice for Hotels</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="myBiz for Small Business-712">
+                  <a data-cy="anchor-myBiz for Small Business-712"
+                    >myBiz for Small Business</a
+                  >,&nbsp;
+                </li>
+                <li data-cy="Free cancellation on International Flights-713">
+                  <a
+                    data-cy="anchor-Free cancellation on International Flights-713"
+                    >Free cancellation on International Flights</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row p-5 align-items-start justify-content-center">
+          <div class="col-lg-3">
+            <h6 class="py-3 fw-bold">Why MakeMyTrip?</h6>
+            <div class="small">
+              Established in 2000, MakeMyTrip has since positioned itself as one
+              of the leading companies, providing great offers, competitive
+              airfares, exclusive discounts, and a seamless online booking
+              experience to many of its customers. The experience of booking
+              your flight tickets, hotel stay, and holiday package through our
+              desktop site or mobile app can be done with complete ease and no
+              hassles at all. We also deliver amazing offers, such as Instant
+              Discounts, Fare Calendar, MyRewardsProgram, MyWallet, and many
+              more while updating them from time to time to better suit our
+              customers’ evolving needs and demands.
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="py-3 fw-bold">Booking Flights with MakeMyTrip</h6>
+            <div class="small">
+              At MakeMyTrip, you can find the best of deals and cheap air
+              tickets to any place you want by booking your tickets on our
+              website or app. Being India’s leading website for hotel, flight,
+              and holiday bookings, MakeMyTrip helps you book flight tickets
+              that are affordable and customized to your convenience. With
+              customer satisfaction being our ultimate goal, we also have a 24/7
+              dedicated helpline to cater to our customer
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="py-3 fw-bold">Domestic Flights with MakeMyTrip</h6>
+            <div class="small">
+              MakeMyTrip is India's leading player for flight bookings. With the
+              cheapest fare guarantee, experience great value at the lowest
+              price. Instant notifications ensure current flight status, instant
+              fare drops, amazing discounts, instant refunds and rebook options,
+              price comparisons and many more interesting features.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around align-items-center p-5 bg-dark">
+        <div class="col-5 text-start text-white">
+          <i class="bi bi-facebook mx-3"></i>
+          <i class="bi bi-twitter-x mx-3"></i>
+        </div>
+        <div class="col-7 text-end text-white">
+          <p>
+            Ⓒ 2023 MAKEMYTRIP PVT.LTD <br /><span class="small">Country</span>
+            <span class="fw-bold">india USA UAE</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--footer Ends-->
+    <script src="Js/script.js"></script>
+    <!--Bootstrap Js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
