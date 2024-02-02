@@ -10,13 +10,13 @@ document.querySelectorAll('.iconText').forEach(function(icon) {
 });
 
 function changeStyle(element) {
-  // Remove 'active' class from all li elements
+
   const allLiElements = document.querySelectorAll(".list");
   allLiElements.forEach((li) => {
     li.classList.remove("active");
   });
 
-  // Add 'active' class to the clicked li element
+
   element.classList.add("active");
 }
 
@@ -43,7 +43,7 @@ function validateLogin() {
   if (!username || !password) {
     alert("Please enter both username and password.");
   } else {
-    alert("Login successful!"); // You can replace this with your login logic
+    alert("Login successful!"); 
   }
 }
 
@@ -54,7 +54,7 @@ function validateRegister() {
   if (!username || !password) {
     alert("Please enter both username and password.");
   } else {
-    alert("Registration successful!"); // You can replace this with your registration logic
+    alert("Registration successful!"); 
   }
 }
 
@@ -66,7 +66,7 @@ function validateRegister() {
 //Sticky Nav
 function handleScroll() {
   let navbar = document.querySelector(".stickyNav");
-  let scrolled = window.scrollY > 50; // Adjust this value based on when you want the navbar to appear
+  let scrolled = window.scrollY > 50;
 
   if (scrolled) {
     navbar.classList.add("scrolled");
@@ -156,7 +156,7 @@ const destinationCardWidth = destinationCards[0].clientWidth +20;
     /*Highlight Card Js */
     let currentIndex = 0;
     const cardsWrapper = document.querySelector('.cards-wrapper');
-    const cardWidth3 = document.querySelector('.Highlightcard').offsetWidth + 10; // 10px for margin-right
+    const cardWidth3 = document.querySelector('.Highlightcard').offsetWidth + 10; 
   
     function showSlide() {
       const newPosition = -currentIndex * cardWidth3;
@@ -169,6 +169,5 @@ const destinationCardWidth = destinationCards[0].clientWidth +20;
     }
   
     function nextSlide() {
-      currentIndex = Math.min(currentIndex + 1, 5); // 5 is the index of the last card
-      showSlide();
+      currentIndex = Math.min(currentIndex + 1, 5); 
     }

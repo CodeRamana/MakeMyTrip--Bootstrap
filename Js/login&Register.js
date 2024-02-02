@@ -18,7 +18,7 @@ function toggleForm() {
     if (!username || !password) {
       alert("Please enter both username and password.");
     } else {
-      alert("Login successful!"); // You can replace this with your login logic
+      alert("Login successful!"); 
     }
   }
 
@@ -29,6 +29,6 @@ function toggleForm() {
     if (!username || !password) {
       alert("Please enter both username and password.");
     } else {
-      alert("Registration successful!"); // You can replace this with your registration logic
+      alert("Registration successful!");
     }
   }
